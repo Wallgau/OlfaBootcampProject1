@@ -110,7 +110,6 @@ svg:not(:root) {
 }
 
 fieldset {
-    border: 1px solid silver;
     margin: 0;
     padding: 0;
 }
@@ -240,7 +239,7 @@ p {
 }
 
 
-/*CSS FOR THE PAGE*/
+/*CSS FOR This specific PAGE*/
 
 
 /*HEADER START*/
@@ -250,16 +249,11 @@ header {
     background: url('../images/headerImage.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     width: 100%;
     padding-bottom: 10%;
     padding-top: 2%;
 }
-
-
-/* .topMenu {
-    display: inline-block;
-} */
 
 .topMenu ul {
     margin-left: 35%;
@@ -268,11 +262,6 @@ header {
 .topMenu li {
     float: left;
 }
-
-
-/* .topMenu li:nth-of-type(1) {
-    padding-left: 39%;
-} */
 
 .topMenu li a {
     color: #fff;
@@ -335,7 +324,6 @@ a {
 .footImage {
     position: absolute;
     width: 50%;
-    border: 1px solid black;
 }
 
 .footImage {
@@ -351,13 +339,11 @@ a {
 .description1 {
     width: 50%;
     float: left;
-    border: 1px solid black;
 }
 
 .description2 {
     width: 50%;
     float: right;
-    border: 1px solid black;
 }
 
 .footImage {
@@ -386,7 +372,6 @@ a {
 .description2 {
     font-family: 'Catamaran', sans-serif;
     text-align: left;
-    border: 1px solid red;
     padding: 6% 4% 12% 6%;
     height: auto;
 }
@@ -519,6 +504,9 @@ main .meetAlisse {
 }
 
 
+/*SECTION3 theThreeLin ENDk*/
+
+
 /*FOOTER START*/
 
 footer {
@@ -606,22 +594,7 @@ input#email {
 /*FOOTER END*/
 
 
-/* .bikeLink {
-    padding-left: 20%;
-} */
-
-
-/*SECTION3 theThreeLin ENDk*/
-
-
 /*MEDIA QUERY*/
-
-
-/* @media screen and (max-width: 1410px) {
-    .theThreeLink .wrapper {
-        padding: 0 15%;
-    }
-} */
 
 @media screen and (max-width: 1380px) {
     .bikerImage {
@@ -748,6 +721,9 @@ input#email {
 @media screen and (max-width: 990px) {
     .topMenu ul:nth-of-type(1) {
         margin-left: 28%;
+    }
+    header {
+        padding-bottom: 5%;
     }
     header h1:nth-of-type(1) {
         width: 100%;
