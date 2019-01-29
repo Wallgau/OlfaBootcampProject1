@@ -8,7 +8,7 @@
     <title>Olfa_Maslah_Project1_Bike</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Catamaran|Pacifico" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <header>
         <div class="wrapper">
             <nav class="topMenu">
-                <ul class="clearfix">
+                <ul class=" tMenuclearfix">
                     <li>
                         <a href="">Home</a>
                     </li>
@@ -73,7 +73,7 @@
 
             <div class="picturePart2 clearfix">
                 <div class="bikeDarkImage clearfix">
-                    <!-- <img src="images/image-2-copy.jpg" alt="picture of a bike in the dark" /> -->
+
                 </div>
 
                 <div class="description2">
@@ -112,7 +112,7 @@
         </section>
         <!--SECTION2 END-->
         <section class="theThreeLink">
-            <div class="clearfix">
+            <div class="clearfix wrapper">
                 <li class="bikeLink floatLink">
                     <a href=""><i class="fas fa-bicycle"></i></a>
                     <h3>Products</h3>
@@ -129,7 +129,7 @@
 
             </div>
         </section>
-        <section class="theGram">
+        <section class="theGram wrapper">
             <h2>The Gram</h2>
             <div class="imgGram clearfix wrapper">
                 <img src="images/cityBikeImage.jpg" alt="womenbiker in a city" />
@@ -139,6 +139,44 @@
         </section>
 
     </main>
+    <footer>
+        <nav class="bottomMenu">
+            <ul class="botMenu clearfix">
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="contactAndEmail clearfix">
+            <div class="footerContact">
+                <h4>Contact</h4>
+                <p>info@email.com|123-456-7890 </p>
+                <p>123 someroad. Toronto, ON</p>
+                <p>A5A 545, Canada</p>
+            </div>
+            <div class="footerEmail">
+                <h4>Stay updated</h4>
+                <p>Subscribe to our newsletter to stay updated</p>
+                <fieldset class="borderForm">
+                    <form class="formulaire" action="sendEmail.php" method="POST" class="applicationForm" autocomplete="off" name="applicationForm">
+                        <label for="email" class="visuallyhidden">Email</label>
+                        <input type="email" name="email" placeholder="email address" id="email">
+                        <label for="submitButton" class="visuallyhidden">Subscribe</label>
+                        <input type="submit" name="submit" id="submitButton" value="subscribe">
+                    </form>
+                </fieldset>
+            </div>
+        </div>
+    </footer>
 
     <!--MAIN END-->
 </body>

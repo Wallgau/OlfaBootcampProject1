@@ -111,8 +111,8 @@ svg:not(:root) {
 
 fieldset {
     border: 1px solid silver;
-    margin: 0 2px;
-    padding: .35em .625em .75em;
+    margin: 0;
+    padding: 0;
 }
 
 button,
@@ -183,6 +183,7 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
     border: 0;
     padding: 0;
+    margin: 0;
 }
 
 .clearfix:after {
@@ -266,8 +267,6 @@ header {
 
 .topMenu li {
     float: left;
-    padding: 1rem;
-    ;
 }
 
 
@@ -278,6 +277,7 @@ header {
 .topMenu li a {
     color: #fff;
     font-family: 'Catamaran', sans-serif;
+    padding: 1rem;
 }
 
 li {
@@ -491,8 +491,111 @@ main .meetAlisse {
 .fas {
     color: white;
     font-size: 1.8rem;
-    padding-top: 15%;
+    padding-top: 15% 0;
 }
+
+.theGram .wrapper {
+    text-align: center;
+    padding-bottom: 8%;
+}
+
+.theGram h2 {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.theGram img {
+    margin: 1%;
+    width: calc((100% - 6%) / 3);
+    text-align: center;
+}
+
+.theGram img:nth-of-type(1) {
+    margin-left: 0;
+}
+
+.theGram img:nth-of-type(3) {
+    margin-right: 0;
+}
+
+
+/*FOOTER START*/
+
+footer {
+    background-color: #222222;
+    padding: 5%;
+}
+
+footer h4 {
+    color: orange;
+    font-family: 'Pacifico', cursive;
+    margin: 1% 0;
+}
+
+.bottomMenu ul {
+    text-align: center;
+    padding: 0;
+}
+
+.footerEmail,
+.footerContact {
+    line-height: 1.45;
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+    float: left;
+    width: 50%;
+}
+
+.footerEmail p,
+.footerContact p {
+    margin: 0;
+    line-height: 1.45;
+    padding: 1% 0;
+}
+
+.borderForm {
+    border: none;
+    position: relative;
+}
+
+input#email {
+    padding: 0.1rem;
+    width: 65%;
+}
+
+#submitButton {
+    background: orange;
+    height: 2rem;
+    border: none;
+    padding: 0.1rem;
+    width: 140px;
+    position: absolute;
+}
+
+.formulaire {
+    font-family: 'Catamaran', sans-serif;
+    float: left;
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 2% 0;
+    width: 80%;
+}
+
+.visuallyhidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/*FOOTER END*/
 
 
 /* .bikeLink {
@@ -533,6 +636,9 @@ main .meetAlisse {
 }
 
 @media screen and (max-width: 1260px) {
+    .description3 {
+        padding-left: 0;
+    }
     .description3 p:nth-of-type(1) {
         padding: 0.8rem 0;
     }
@@ -541,6 +647,7 @@ main .meetAlisse {
     }
     .description3 button {
         margin: 0;
+        text-align: center;
     }
     .description3 h2 {
         padding-top: 3%;
@@ -584,6 +691,7 @@ main .meetAlisse {
     .description1,
     .description2 {
         text-align: center;
+        padding: 10%;
     }
     .description1 h2,
     .description2 h2 {
@@ -660,6 +768,9 @@ main .meetAlisse {
         height: auto;
         float: none;
     }
+    .meetAlissa {
+        padding: 0;
+    }
     /*CHANGER L ORDRE, pour le moment ne fonctionne pas*/
 }
 
@@ -675,6 +786,7 @@ main .meetAlisse {
     .floatLink {
         float: none;
         margin: 0 auto;
+        padding: 5% 0;
     }
     .footImage,
     .bikeDarkImage {
@@ -682,29 +794,83 @@ main .meetAlisse {
     }
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 690px) {
     .theThreeLink {
         background-position-x: right 30%;
     }
-    .topMenu ul:nth-of-type(1) {
+    .menu ul:nth-of-type(1) {
         margin-left: 20%;
     }
     .logoLink {
         width: 100%;
         padding-left: 25%;
     }
+    .theGram img:nth-of-type(1),
+    .theGram img:nth-of-type(2) {
+        width: 47%;
+        margin: 0;
+    }
+    .theGram .wrapper {
+        width: 100%;
+    }
+    .theGram img:nth-of-type(1) {
+        margin-right: 2%;
+    }
+    .theGram img:nth-of-type(2) {
+        margin-left: 2%;
+    }
+    .theGram img:nth-of-type(3) {
+        display: none;
+    }
+    footer {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    .footerEmail,
+    .footerContact {
+        width: 100%;
+    }
+    .bottomMenu {
+        margin: 0;
+        padding: 0;
+    }
+    .footerEmail,
+    .footerContact {
+        float: none;
+        width: 95%;
+        margin: 0 2%;
+    }
+    .footerEmail h4,
+    .footerContact h4 {
+        padding-top: 8%;
+    }
+    .formulaire {
+        width: 80%;
+        margin: 0 10%;
+    }
+    input#submitButton {
+        position: relative;
+    }
+    input#submitButton,
+    input#email {
+        width: 100%;
+        text-align: center;
+        margin: 2% 0;
+    }
+    .botMenu {
+        margin: 0 5%;
+        padding: 4% 0;
+    }
 }
 
 @media screen and (max-width: 550px) {
-    header {
-        margin-top: -5%;
-    }
     header h1 {
         padding: 25% 0;
     }
     .topMenu {
         max-width: 1.5rem;
-        margin-left: 80%;
+        margin-left: 75%;
         padding-top: 10%;
     }
     .topMenu ul li {
@@ -720,7 +886,7 @@ main .meetAlisse {
         visibility: hidden;
         padding: 0;
     }
-    .topMenu ul li:before {
+    header .topMenu ul li:before {
         content: '';
         position: absolute;
         border-top: 1px white solid;
@@ -758,3 +924,6 @@ main .meetAlisse {
         background-position-x: right 30%;
     }
 } */
+
+
+/*commentaire pour git commit*/
