@@ -532,9 +532,17 @@ footer h4 {
     margin: 1% 0;
 }
 
-.bottomMenu ul {
-    text-align: center;
-    padding: 0;
+.bottomMenu {
+    margin: 0 10% 5%;
+}
+
+.botMenu li {
+    float: left;
+    padding: 0 7.5%;
+}
+
+.botMenu a {
+    color: white;
 }
 
 .footerEmail,
@@ -792,6 +800,13 @@ input#email {
     .bikeDarkImage {
         height: 50vh;
     }
+    .botMenu li {
+        float: left;
+        padding: 0 6%;
+    }
+    .botMenu li:nth-of-type(1) {
+        padding-left: 10%;
+    }
 }
 
 @media screen and (max-width: 690px) {
@@ -865,6 +880,9 @@ input#email {
 }
 
 @media screen and (max-width: 550px) {
+    header {
+        background-image: url('../images/headerImageMobile.jpg')
+    }
     header h1 {
         padding: 25% 0;
     }
@@ -918,12 +936,38 @@ input#email {
     }
 }
 
-
-/* @media screen and (max-width: 400px) {
-    .theThreeLink {
-        background-position-x: right 30%;
+@media screen and (max-width: 500px) {
+    .botMenu li {
+        float: left;
+        padding: 0 6%;
     }
-} */
+    /*because each element has different number of letter, we have to put a different padding for each one*/
+    .bottomMenu .botMenu li:nth-of-type(2n+1) {
+        padding: 0% 1.5rem;
+    }
+    .bottomMenu .botMenu li:nth-of-type(3n+1) {
+        padding: 0% 1rem;
+    }
+}
 
+@media screen and (max-width: 450px) {
+    .botMenu li {
+        float: left;
+        padding: 0 1rem;
+    }
+    .bottomMenu .botMenu li:nth-of-type(2n+1) {
+        padding: 0% 1rem;
+    }
+    .bottomMenu .botMenu li:nth-of-type(3n+1) {
+        padding: 0% 0.4rem;
+    }
+}
 
-/*commentaire pour git commit*/
+@media screen and (max-width: 380px) {
+    .bottomMenu .botMenu li:nth-of-type(2n+1) {
+        padding: 0% 1rem;
+    }
+    .bottomMenu .botMenu li:nth-of-type(3n+1) {
+        padding: 0% 0.3rem;
+    }
+}
