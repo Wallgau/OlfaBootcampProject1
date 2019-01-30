@@ -231,7 +231,6 @@ h2 {
 .wrapper {
     max-width: 1600px;
     margin: 0 auto;
-    /* width: 90%; */
 }
 
 p,
@@ -626,16 +625,6 @@ footer {
     .description3 p:nth-of-type(1) {
         padding: 0.6rem 0;
     }
-    /* .bikerImage img {
-        padding-top: 15%;
-    } */
-    /* .description3 button {
-        margin: 0;
-        text-align: center;
-    }
-    .description3 h2 {
-        padding-top: 3%;
-    } */
 }
 
 @media screen and (max-width: 1180px) {
@@ -654,6 +643,7 @@ footer {
     .bikerImage img {
         width: 100%;
         margin-right: 1%;
+        padding-bottom: 0;
     }
     .description3 {
         width: 50%;
@@ -661,9 +651,6 @@ footer {
     }
     .description3 p:nth-of-type(1) {
         padding: 2.4rem 0;
-    }
-    .description3 h2 {
-        padding-bottom: 1rem;
     }
     .meetAlissa {
         padding-right: 0;
@@ -683,12 +670,9 @@ footer {
     .description2 h2 {
         margin-top: 0;
     }
-    .description3 {
-        padding-left: 2rem;
-    }
     .description3 h2 {
         text-align: center;
-        padding: 0;
+        padding-bottom: 1.5rem;
     }
     .description3 button {
         margin-top: 1.7rem;
@@ -724,9 +708,10 @@ footer {
     }
     .description3 {
         width: 100%;
+        padding: 2.4rem 0;
     }
     .description3 p:nth-of-type(1) {
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -891,9 +876,6 @@ footer {
     .logoLink {
         display: none;
     }
-    /*  .logoLink ul li {
-        float: left;
-    } */
     .description1,
     .description2 {
         padding-bottom: 15%;
@@ -909,8 +891,9 @@ footer {
     .theThreeLink {
         width: 100%;
     }
-    .theThreeLink div.floatLink {
+    .floatLink {
         padding: 6% 0;
+        width: 45%;
     }
 }
 
@@ -939,14 +922,33 @@ footer {
     .bottomMenu .botMenu li:nth-of-type(3n+1) {
         padding: 0% 0.4rem;
     }
+    .footerEmail,
+    .footerContact {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 380px) {
+    div.description1,
+    div.description2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .description3 {
+        padding-bottom: 3rem;
+    }
     .bottomMenu .botMenu li:nth-of-type(2n+1) {
         padding: 0% 1rem;
     }
     .bottomMenu .botMenu li:nth-of-type(3n+1) {
         padding: 0% 0.3rem;
+    }
+    .menu {
+        width: 85%;
+    }
+    .menu a {
+        padding: 0;
     }
 }
 
